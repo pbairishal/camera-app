@@ -42,7 +42,7 @@ body{
     text-align: center;
 }
 
-#camera--view, #camera--sensor, #camera--output{
+#camera--view, #camera--sensor, #camera--output, .cameraOutput{
     transform: scaleX(-1);
     filter: FlipH;
 }
@@ -125,3 +125,8 @@ body{
 .red{
     background-color: red !important; 
 }
+
+video {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
