@@ -25,9 +25,47 @@
 		    <img src="//:0" alt="" id="camera--output">
 
 		    <!-- Camera trigger -->
-		    <button id="camera--trigger">Take a picture</button>
+			<button id="camera--trigger">Take picture</button>
+
+			<div id="camera--trigger1">
+				<button class="green" id="camera--trigger-0">Done</button>
+				<button class="red" id="camera--trigger-1">Retake</button>
+			</div>
+			
+			
 
 		</main>
+
+
+
+
+
+		<div class="doc-section">
+			<div class="center">
+				<span>PAN Card</span>
+				<div id="camera--input1">
+					<button class="cf-btn">UPLOAD</button>
+					<button class="cf-btn" onclick="takePhoto(1)">TAKE PHOTO</button>
+				</div>
+			</div>
+			<div class="cameraOutput" id="camera--output1">
+			</div>
+		</div>
+
+		<div class="doc-section">
+			<div class="center">
+				<span>Aadhar Card</span>
+				<div id="camera--input2">
+					<button class="cf-btn">UPLOAD</button>
+					<button class="cf-btn" onclick="takePhoto(2)">TAKE PHOTO</button>
+				</div>
+			</div>
+			<div class="cameraOutput" id="camera--output2">
+			</div>
+		</div>
+
+
+
 
 		<!-- Reference to your JavaScript file -->
 		<script src="app.js"></script> 

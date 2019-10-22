@@ -2,14 +2,44 @@ html, body{
   margin: 0;
   padding: 0;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
+}
+
+body{
+    padding: 16px;
 }
 
 #camera, #camera--view, #camera--sensor, #camera--output{
+    /* position: fixed;
+    height: 100%;
+    width: 100%;
+    object-fit: cover; */
+}
+
+.doc-section{
+    padding: 20px 0 10px 0;
+}
+
+.doc-section span{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fullScreen{
+    top: 0;
+    left: 0;
     position: fixed;
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+.displayNone{
+    display: none;
+}
+
+.center{
+    text-align: center;
 }
 
 #camera--view, #camera--sensor, #camera--output{
@@ -18,18 +48,59 @@ html, body{
 }
 
 #camera--trigger{
-    width: 200px;
-    background-color: black;
-    color: white;
-    font-size: 16px;
-    border-radius: 30px;
+    background-color: #00bfdf;
+    color: #fff;
     border: none;
-    padding: 15px 20px;
-    text-align: center;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    padding: 12px 16px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
     position: fixed;
     bottom: 30px;
-    left: calc(50% - 100px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+}
+
+#camera--trigger1 button{
+    background-color: #00bfdf;
+    color: #fff;
+    border: none;
+    padding: 12px 16px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+}
+
+#camera--trigger1{
+    position: fixed;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    /* left: calc(50% - 100px); */
+}
+
+.cf-btn{
+    background-color: #00bfdf;
+    color: #fff;
+    border: none;
+    padding: 12px 16px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none;
+    cursor: pointer;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 150px;
 }
 
 .taken{
@@ -41,4 +112,16 @@ html, body{
     top: 20px;
     right: 20px;
     z-index: 2;
+}
+
+.cameraOutput{
+    text-align: center;
+}
+
+.green{
+    background-color: green !important; 
+}
+
+.red{
+    background-color: red !important; 
 }
