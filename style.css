@@ -42,10 +42,10 @@ body{
     text-align: center;
 }
 
-#camera--view, #camera--sensor, #camera--output, .cameraOutput{
+/* #camera--view, #camera--sensor, #camera--output, .cameraOutput{
     transform: scaleX(-1);
     filter: FlipH;
-}
+} */
 
 #camera--trigger{
     background-color: #00bfdf;
@@ -126,7 +126,7 @@ body{
     background-color: red !important; 
 }
 
-video {
+/* video {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-  }
+  } */
